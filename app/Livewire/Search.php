@@ -7,7 +7,7 @@ use App\Models\User;
 
 class Search extends Component
 {
-    public $search = 'dario';
+    public $search = '';
     public function render()
     {
         $users = User::where('name', 'like', '%' . $this->search . '%')->orWhere('username', 'like', '%' . $this->search . '%')
