@@ -1,16 +1,11 @@
 <div>
     @auth
-
-
         <p class="text-xl font-bold text-center mb-4">  Agrega un nuevo comentario  </p>
         @if (session('mensaje'))
             <div class="bg-green-500 p-2 rounded-lg mb-6 text-white text-center uppercase font-bold">
                 {{ session('mensaje') }}
             </div>
         @endif
-
-
-
         <br>
 
         <label for="comentario"  class="mb-2 block uppercase text-gray-500 font-bold">
