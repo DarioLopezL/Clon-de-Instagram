@@ -5,8 +5,6 @@
 
 @endsection
 
-@livewire('search')
-
  @section('contenido')
         <x-listar-post :posts="$posts" />
  @endsection
